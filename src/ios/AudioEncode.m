@@ -1,10 +1,3 @@
-//
-//  AudioEncode.m
-//
-//  By Lyle Pratt, September 2011.
-//    Updated Oct 2012 by Keenan Wyrobek for Cordova 2.1.0
-//  MIT licensed
-//
 
 #import "AudioEncode.h"
 
@@ -45,7 +38,7 @@
             NSLog(@"Export Session Status: %d", exportSession.status);
         }
         
-        [exportSession release];
+       // [exportSession release];
         
         NSFileManager *fileMgr = [NSFileManager defaultManager];
         NSError *error = noErr;
