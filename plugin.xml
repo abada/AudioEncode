@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+    id="com.betait.audioencode"
+    version="1.0.0">
+    <name>AudioEncode</name>   
+    <!-- ios -->
+    <platform name="ios">    
+        <config-file target="config.xml" parent="/*">
+            <feature name="AudioEncode">
+                <param name="ios-package" value="AudioEncode" /> 
+            </feature>
+        </config-file>
+        <js-module src="www/AudioEncode.js" name="AudioEncode">
+            <clobbers target="encodeAudio" />
+        </js-module>
+        <header-file src="src/ios/AudioEncode.h" />
+	    <source-file src="src/ios/AudioEncode.m" />
+    </platform>
+</plugin>
