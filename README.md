@@ -12,6 +12,8 @@ The plugin creates a function at window.encodeAudio(originalSrc, success, fail) 
 
 Example:
   //file_path wav file
+  
+  
   window.abadaencode(file_path, function(echoValue) {
         
         console.log(echoValue);
