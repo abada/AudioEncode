@@ -11,18 +11,11 @@ The plugin creates a function at window.encodeAudio(originalSrc, success, fail) 
  * fail: (required) This function is called on encode failure and will be passed a statusCode.
 
 Example:
-
-		 audioEncode.convert(pathToWavFile, success, fail);
-
-		var success = function(newM4APath) {
-			//Do something with your new encoded audio (upload it?  - see notes in Xcode example)
-			console.log(newM4APath);
-		}
-
-		var fail = function(statusCode) {
-			//Why did it fail? - look in the plug in for source of error codes.
-			console.log(statusCode);
-		}
+  //file_path wav file
+  window.abadaencode(file_path, function(echoValue) {
+        
+        console.log(echoValue);
+    });
 
 See demo code for more details
 
